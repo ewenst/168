@@ -307,11 +307,11 @@
     
     <category term="dsm" scheme="http://ewenst.github.io/168/tags/dsm/"/>
     
+    <category term="vmw" scheme="http://ewenst.github.io/168/tags/vmw/"/>
+    
     <category term="htpc" scheme="http://ewenst.github.io/168/tags/htpc/"/>
     
     <category term="群晖" scheme="http://ewenst.github.io/168/tags/%E7%BE%A4%E6%99%96/"/>
-    
-    <category term="vmw" scheme="http://ewenst.github.io/168/tags/vmw/"/>
     
   </entry>
   
