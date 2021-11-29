@@ -17,21 +17,21 @@
 
 
     <title>WIN10+VMware Workstation 14 +DSM6.2详解（三）：安装Let&#39;s Encrypt证书实现泛域名SSL | Blog by zszsz</title>
-    <link rel="icon" type="image/png" href="/168/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/168/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/168/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/168/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/168/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/168/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/168/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/168/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="/168/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/168/atom.xml" title="Blog by zszsz" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="Blog by zszsz" type="application/atom+xml">
 </head>
 
 
@@ -42,9 +42,9 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/168/" class="waves-effect waves-light">
+                <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/168/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Blog by zszsz</span>
                 </a>
@@ -56,7 +56,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/" class="waves-effect waves-light">
+    <a href="/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
@@ -67,7 +67,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/tags" class="waves-effect waves-light">
+    <a href="/tags" class="waves-effect waves-light">
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
@@ -78,7 +78,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/categories" class="waves-effect waves-light">
+    <a href="/categories" class="waves-effect waves-light">
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
@@ -89,7 +89,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/archives" class="waves-effect waves-light">
+    <a href="/archives" class="waves-effect waves-light">
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
@@ -100,7 +100,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/about" class="waves-effect waves-light">
+    <a href="/about" class="waves-effect waves-light">
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
@@ -111,7 +111,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/contact" class="waves-effect waves-light">
+    <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
@@ -122,7 +122,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/168/friends" class="waves-effect waves-light">
+    <a href="/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
@@ -143,7 +143,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/168/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Blog by zszsz</div>
         <div class="logo-desc">
@@ -159,7 +159,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/" class="waves-effect waves-light">
+		<a href="/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
@@ -170,7 +170,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/tags" class="waves-effect waves-light">
+		<a href="/tags" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
@@ -181,7 +181,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/categories" class="waves-effect waves-light">
+		<a href="/categories" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
@@ -192,7 +192,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/archives" class="waves-effect waves-light">
+		<a href="/archives" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
@@ -203,7 +203,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/about" class="waves-effect waves-light">
+		<a href="/about" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
@@ -214,7 +214,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/contact" class="waves-effect waves-light">
+		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
@@ -225,7 +225,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/168/friends" class="waves-effect waves-light">
+		<a href="/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
@@ -313,7 +313,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/168/../assets/u=3031627669,1183098546&fm=173&app=25&f=JPEG.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/../assets/u=3031627669,1183098546&fm=173&app=25&f=JPEG.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -331,7 +331,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/168/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -434,15 +434,15 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/168/tags/%E7%BE%A4%E6%99%96/">
+                            <a href="/tags/%E7%BE%A4%E6%99%96/">
                                 <span class="chip bg-color">群晖</span>
                             </a>
                         
-                            <a href="/168/tags/Let%E2%80%99s-Encrypt/">
+                            <a href="/tags/Let%E2%80%99s-Encrypt/">
                                 <span class="chip bg-color">Let’s Encrypt</span>
                             </a>
                         
-                            <a href="/168/tags/%E5%85%8D%E8%B4%B9SSL/">
+                            <a href="/tags/%E5%85%8D%E8%B4%B9SSL/">
                                 <span class="chip bg-color">免费SSL</span>
                             </a>
                         
@@ -454,7 +454,7 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/168/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" class="post-category">
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" class="post-category">
                                 技术文档
                             </a>
                         
@@ -484,7 +484,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="/168/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -500,7 +500,7 @@
 <p>前言： 1.本篇需要先解决DDNS，请查看《<a target="_blank" rel="noopener" href="https://www.zszsz.cn/jsd/88/">WIN10+VMware Workstation 14 +DSM6.2详解（二）：阿里云DDNS</a>》， 2.这里的泛域名意思就是任意二级域名均可用SSL访问，比如本站zszsz.cn为一级域名，而*.zszsz.cn（星号代表任何字符）为二级域名，很多服务商的SSL服务只提供几个二级域名的免费证书申请，泛域名SSL是需要收费的，所以这里我们采用免费又好用的Let’s Encrypt证书。</p>
 </blockquote>
 <p> Let’s Encrypt证书申请的方式有几种，一种是在群晖的证书里面就可以申请，不过需要你的宽带开放80端口；第二种是网页申请，由于以前这个方式不支持泛域名，所以没关注；第三种就是下面的脚本申请，实际就几行代码命令，替换复制粘贴就行，比网页申请还更方便。</p>
-<h2 id="一、SSH连接群晖"><a href="#一、SSH连接群晖" class="headerlink" title="一、SSH连接群晖"></a>一、SSH连接群晖</h2><p>打开PuTTY软件连接：主机名称输入你的群晖IP，连接类型为SSH，点击下面打开。 <a href="../assets/1.png"><img src="/168/../assets/1.png"></a> 在弹出的命令行窗口依次输入帐号密码，连接群晖。 <strong>进行上面连接之前确保你的DSM开启主目录服务，就是有homes文件夹，到时生成的证书会在homes文件夹，没有的话你则可能需要root帐户登录，而生成的证书会放在根目录下，还需要WinSCP等软件进入根目录才能拷贝出来。</strong></p>
+<h2 id="一、SSH连接群晖"><a href="#一、SSH连接群晖" class="headerlink" title="一、SSH连接群晖"></a>一、SSH连接群晖</h2><p>打开PuTTY软件连接：主机名称输入你的群晖IP，连接类型为SSH，点击下面打开。 <a href="../assets/1.png"><img src="/../assets/1.png"></a> 在弹出的命令行窗口依次输入帐号密码，连接群晖。 <strong>进行上面连接之前确保你的DSM开启主目录服务，就是有homes文件夹，到时生成的证书会在homes文件夹，没有的话你则可能需要root帐户登录，而生成的证书会放在根目录下，还需要WinSCP等软件进入根目录才能拷贝出来。</strong></p>
 <h2 id="二、获取acme-sh代码并安装"><a href="#二、获取acme-sh代码并安装" class="headerlink" title="二、获取acme.sh代码并安装"></a>二、获取acme.sh代码并安装</h2><p>1、获取代码 </p>
 <pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">git clone&nbsp;https://github.com/Neilpang/acme.sh.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -510,7 +510,7 @@
 <p> 3、安装脚本</p>
 <pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">./acme.sh --install --force <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><a href="../assets/22.png"><img src="/168/../assets/22.png"></a> 4、设置API参数：支持很多域名服务商的域名证书申请，所以API参数要对应你的域名服务商，现在以阿里云域名为例， export Ali_Key=”替换为阿里云的key” export Ali_Secret=”替换为阿里云的secrcet” <strong>下表提供域名****DNS服务商名称、简称、API参数和开通API对照表</strong> API参数中Key、Secret请进入域名服务商处查找.</p>
+<p><a href="../assets/22.png"><img src="/../assets/22.png"></a> 4、设置API参数：支持很多域名服务商的域名证书申请，所以API参数要对应你的域名服务商，现在以阿里云域名为例， export Ali_Key=”替换为阿里云的key” export Ali_Secret=”替换为阿里云的secrcet” <strong>下表提供域名****DNS服务商名称、简称、API参数和开通API对照表</strong> API参数中Key、Secret请进入域名服务商处查找.</p>
 <p><strong>服务商名称</strong></p>
 <p><strong>服务商简称</strong></p>
 <p><strong>所需API参数</strong></p>
@@ -574,10 +574,10 @@
 <p>yourdomain.site替换你自己的域名。比如本站域名为zszsz.cn替换后为： </p>
 <pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">./acme.sh --issue --dns dns\_ali -d zszsz.cn -d \*.zszsz.cn<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p> <a href="../assets/3.png"><img src="/168/../assets/3.png"></a> 6、这时屏幕上自动计时120秒，在你的域名里自动添加一条TXT记录，可以自行进入域名服务商的域名解析里查看。</p>
+<p> <a href="../assets/3.png"><img src="/../assets/3.png"></a> 6、这时屏幕上自动计时120秒，在你的域名里自动添加一条TXT记录，可以自行进入域名服务商的域名解析里查看。</p>
 <p>7、生成证书，放在home或homes/acme.sh/域名同名文件夹里面。 </p>
-<p>8、生成证书成功后，通过File Station，将第7步目录里的域名.key和域名.cer、cer三个文件下载下来， <a href="../assets/4.png"><img src="/168/../assets/4.png"></a> 9、打开控制面板–安全性—证书—新增—导入证书： <a href="../assets/5.png"><img src="/168/../assets/5.png"></a> 10、导入刚才下载的文件，中间证书ca.cer可以不用： <a href="../assets/6.png"><img src="/168/../assets/6.png"></a> 11、点击配置，对各个服务分配证书： <a href="../assets/7.png"><img src="/168/../assets/7.png"></a> 这样你就可以无端口直接使用https做安全访问了。</p>
-<h2 id="三、设置子域名访问"><a href="#三、设置子域名访问" class="headerlink" title="三、设置子域名访问"></a>三、设置子域名访问</h2><p>1、打开应用程序门户，群晖自带的服务启用自定义域，HSTS和HTTP/2打勾。 <a href="../assets/8.png"><img src="/168/../assets/8.png"></a> 2、安装的套件可以自定一个二级子域名来代替端口形式访问，使用反向代理，比如transmission可以如下设置：<a href="../assets/9.png"><img src="/168/../assets/9.png"></a> 3、由于是泛域名SSL，虽然 你可以自定义多个二级子域名来进行无端口SSL访问，不过要记得将这些子域名进行解析（域名DDNS解析参考第二章)。</p>
+<p>8、生成证书成功后，通过File Station，将第7步目录里的域名.key和域名.cer、cer三个文件下载下来， <a href="../assets/4.png"><img src="/../assets/4.png"></a> 9、打开控制面板–安全性—证书—新增—导入证书： <a href="../assets/5.png"><img src="/../assets/5.png"></a> 10、导入刚才下载的文件，中间证书ca.cer可以不用： <a href="../assets/6.png"><img src="/../assets/6.png"></a> 11、点击配置，对各个服务分配证书： <a href="../assets/7.png"><img src="/../assets/7.png"></a> 这样你就可以无端口直接使用https做安全访问了。</p>
+<h2 id="三、设置子域名访问"><a href="#三、设置子域名访问" class="headerlink" title="三、设置子域名访问"></a>三、设置子域名访问</h2><p>1、打开应用程序门户，群晖自带的服务启用自定义域，HSTS和HTTP/2打勾。 <a href="../assets/8.png"><img src="/../assets/8.png"></a> 2、安装的套件可以自定一个二级子域名来代替端口形式访问，使用反向代理，比如transmission可以如下设置：<a href="../assets/9.png"><img src="/../assets/9.png"></a> 3、由于是泛域名SSL，虽然 你可以自定义多个二级子域名来进行无端口SSL访问，不过要记得将这些子域名进行解析（域名DDNS解析参考第二章)。</p>
 <h2 id="四、申请的LET’S证书只能用90天，90天以后需要更新证书"><a href="#四、申请的LET’S证书只能用90天，90天以后需要更新证书" class="headerlink" title="四、申请的LET’S证书只能用90天，90天以后需要更新证书"></a>四、申请的LET’S证书只能用90天，90天以后需要更新证书</h2><p>更新证书方式：重复第一大点，SSH连接后输入cd acme.sh 进入acme.sh 目录， 输入更新命令： </p>
 <pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">./acme.sh --renew -d yourdomain.site -d \*.yourdomain.site <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -599,7 +599,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/168/about" rel="external nofollow noreferrer">zszsz</a>
+                    <a href="/about" rel="external nofollow noreferrer">zszsz</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -609,7 +609,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ewenst.github.io/168/168/2019/01/20/win10vmware-workstation-14-dsm6-2%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85lets-encrypt%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0%E6%B3%9B%E5%9F%9F%E5%90%8Dssl/">http://ewenst.github.io/168/168/2019/01/20/win10vmware-workstation-14-dsm6-2%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85lets-encrypt%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0%E6%B3%9B%E5%9F%9F%E5%90%8Dssl/</a>
+                    <a href="http://ewenst.github.io/2019/01/20/win10vmware-workstation-14-dsm6-2%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85lets-encrypt%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0%E6%B3%9B%E5%9F%9F%E5%90%8Dssl/">http://ewenst.github.io/2019/01/20/win10vmware-workstation-14-dsm6-2%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85lets-encrypt%E8%AF%81%E4%B9%A6%E5%AE%9E%E7%8E%B0%E6%B3%9B%E5%9F%9F%E5%90%8Dssl/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -622,7 +622,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/168/about" target="_blank">zszsz</a>
+                    <a href="/about" target="_blank">zszsz</a>
                     !
                 </span>
             </div>
@@ -647,15 +647,15 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/168/tags/%E7%BE%A4%E6%99%96/">
+                                <a href="/tags/%E7%BE%A4%E6%99%96/">
                                     <span class="chip bg-color">群晖</span>
                                 </a>
                             
-                                <a href="/168/tags/Let%E2%80%99s-Encrypt/">
+                                <a href="/tags/Let%E2%80%99s-Encrypt/">
                                     <span class="chip bg-color">Let’s Encrypt</span>
                                 </a>
                             
-                                <a href="/168/tags/%E5%85%8D%E8%B4%B9SSL/">
+                                <a href="/tags/%E5%85%8D%E8%B4%B9SSL/">
                                     <span class="chip bg-color">免费SSL</span>
                                 </a>
                             
@@ -663,12 +663,12 @@
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/168/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/168/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -701,7 +701,7 @@
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/168/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -935,8 +935,8 @@
     </div>
 </div>
 
-<script src="/168/libs/valine/av-min.js"></script>
-<script src="/168/libs/valine/Valine.min.js"></script>
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
@@ -967,10 +967,10 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/168/2019/01/29/3dsmax%E4%BD%9C%E5%93%81-%E4%B8%89%E6%98%9Fn188/">
+                <a href="/2019/01/29/3dsmax%E4%BD%9C%E5%93%81-%E4%B8%89%E6%98%9Fn188/">
                     <div class="card-image">
                         
-                        <img src="/168/../assets/n188.jpg" class="responsive-img" alt="3DSMAX作品-三星N188">
+                        <img src="/../assets/n188.jpg" class="responsive-img" alt="3DSMAX作品-三星N188">
                         
                         <span class="card-title">3DSMAX作品-三星N188</span>
                     </div>
@@ -989,7 +989,7 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/168/categories/%E4%BD%9C%E5%93%81/" class="post-category">
+                            <a href="/categories/%E4%BD%9C%E5%93%81/" class="post-category">
                                     作品
                                 </a>
                             
@@ -1000,11 +1000,11 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/168/tags/3DSMAX%E5%BB%BA%E6%A8%A1/">
+                    <a href="/tags/3DSMAX%E5%BB%BA%E6%A8%A1/">
                         <span class="chip bg-color">3DSMAX建模</span>
                     </a>
                     
-                    <a href="/168/tags/%E4%B8%89%E6%98%9FN188/">
+                    <a href="/tags/%E4%B8%89%E6%98%9FN188/">
                         <span class="chip bg-color">三星N188</span>
                     </a>
                     
@@ -1019,11 +1019,11 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/168/2019/01/19/%E6%88%90%E5%85%A8/">
+                <a href="/2019/01/19/%E6%88%90%E5%85%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/168/medias/featureimages/0.jpg" class="responsive-img" alt="诗《成全》">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="诗《成全》">
                         
                         <span class="card-title">诗《成全》</span>
                     </div>
@@ -1042,7 +1042,7 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/168/categories/%E4%BD%9C%E5%93%81/" class="post-category">
+                            <a href="/categories/%E4%BD%9C%E5%93%81/" class="post-category">
                                     作品
                                 </a>
                             
@@ -1053,11 +1053,11 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/168/tags/%E6%88%90%E5%85%A8/">
+                    <a href="/tags/%E6%88%90%E5%85%A8/">
                         <span class="chip bg-color">成全</span>
                     </a>
                     
-                    <a href="/168/tags/%E8%AF%97%E6%AD%8C/">
+                    <a href="/tags/%E8%AF%97%E6%AD%8C/">
                         <span class="chip bg-color">诗歌</span>
                     </a>
                     
@@ -1111,21 +1111,21 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/168/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/168/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/168/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/168/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1146,7 +1146,7 @@
 </div>
 
 
-<script src="/168/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1231,7 +1231,7 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/168/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -1281,7 +1281,7 @@
     </div>
 </div>
 
-<script src="/168/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
@@ -1292,7 +1292,7 @@
                 <span id="year">2019-2021</span>
             
             <span id="year">2019</span>
-            <a href="/168/about" target="_blank">ZSZSZ</a>
+            <a href="/about" target="_blank">ZSZSZ</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -1317,7 +1317,7 @@
             
             <br>
             
-            <span id="icp"><img src="/168/medias/icp.png" style="vertical-align: text-bottom;" />
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
                 <a href="https://www.icpapi.com/zszsz.cn/" target="_blank">粤ICP备13046468号-1</a>
             </span>
             
@@ -1349,7 +1349,7 @@
 
 
 
-    <a href="/168/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
         <i class="fas fa-rss"></i>
     </a>
 
@@ -1460,7 +1460,7 @@ $(function () {
         });
     };
 
-    searchFunc('/168/search.xml', 'searchInput', 'searchResult');
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
@@ -1472,12 +1472,12 @@ $(function () {
 </div>
 
 
-    <script src="/168/libs/materialize/materialize.min.js"></script>
-    <script src="/168/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/168/libs/aos/aos.js"></script>
-    <script src="/168/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/168/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/168/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1498,10 +1498,10 @@ $(function () {
 </script>
 
     
-    <script src="/168/libs/others/clicklove.js" async="async"></script>
+    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/168/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1516,7 +1516,7 @@ $(function () {
     
 
     
-    <script src="/168/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
